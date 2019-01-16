@@ -35,7 +35,7 @@ class MyClient(discord.Client):
         # Make sure we don't respond to ourself or messages outside the channel
         # or when there is no active game
         if message.author == self.user or \
-                message.channel.id != config.CHANNEL_ID or \
+                message.channel.id != config.534397687148314634 or \
                 not self.isGameLive:
             return
 
