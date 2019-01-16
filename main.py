@@ -82,7 +82,7 @@ class MyClient(discord.Client):
             if broadcast:
                 self.isGameLive = True
                 socketUrl = broadcast.get('hype')
-                channel = self.get_channel(config.CHANNEL_ID)
+                channel = self.get_channel(config."532578603297144842")
 
                 # Add the websocket handler to the event loop
                 # This web socket will get the questions and answers from HQ
