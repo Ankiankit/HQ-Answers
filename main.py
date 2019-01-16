@@ -2,8 +2,8 @@ import config
 import discord
 import os
 import asyncio
-from networking import networking as networking
-from messageBox import messageBox as messageBox
+import networking 
+import messageBox 
 
 
 class MyClient(discord.Client):
