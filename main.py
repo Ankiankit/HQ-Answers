@@ -1,5 +1,6 @@
 import config
 import discord
+import os
 import asyncio
 import networking
 import messageBox
@@ -97,4 +98,4 @@ class MyClient(discord.Client):
 
 if __name__ == '__main__':
     client = MyClient()
-    client.run(config.Token)
+    client.run(os.getenv('Token'))
