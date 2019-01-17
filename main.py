@@ -27,9 +27,8 @@ class MyClient(discord.Client):
         """
         print(f'{self.user.name} Logged In!')
         print('--------------------\n')
-        await client.change_presence(game=discord.Game(name="Answers", url="https://twitch.tv/~", type=1))
-        client.loop.create_task(status_task())
-
+        
+        
     async def on_message(self, message: discord.Message):
         """
             Handles all the discord commands.
