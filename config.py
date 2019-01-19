@@ -1,1 +1,1 @@
-CHANNEL_ID = 532578603297144842 #moon-lite-answer
+CHANNEL_ID = 536129638402097153 #hq-bot-answers-test 
