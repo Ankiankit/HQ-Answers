@@ -29,7 +29,7 @@ class MyClient(discord.Client):
         print('--------------------\n')
 
     async def status_task():
-    while True:
+        while True:
         await client.change_presence(game=discord.Game(name='text'))
         await asyncio.sleep(5)
         await client.change_presence(game=discord.Game(name='text'))
