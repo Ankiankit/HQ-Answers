@@ -82,7 +82,7 @@ class MyClient(discord.Client):
             # If there is an active show
             if broadcast:
                 self.isGameLive = True
-                socketUrl = broadcast.get('https://api-quiz.hype.space')
+                socketUrl = broadcast.get('URL')
                 channel = self.get_channel(config.CHANNEL_ID)
 
                 # Add the websocket handler to the event loop
