@@ -3,7 +3,10 @@ import discord
 import os
 import asyncio
 import networking 
-import messageBox 
+import messageBox
+import platform
+import colorsys
+import random
 
 
 class MyClient(discord.Client):
