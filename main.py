@@ -21,26 +21,17 @@ class MyClient(discord.Client):
         self.answersCounts = [0, 0, 0]
         self.msgBox = messageBox.MessageBox()
 
-    async def on_ready(self):
-        """
-            Called when the discord bot logs in.
-        """
-        print(f'{self.user.name} Logged In!')
-        print('--------------------\n')
-
-     
+         
 async def status_task():
-     while True:
-         await client.change_presence(game=discord.Game(name='text'))
-         await asyncio.sleep(5)
-         await client.change_presence(game=discord.Game(name='text'))
-         await asyncio.sleep(5)
+    while True:
+        await client.change_presence(game=discord.Game(name='HQ TRIVIA'))
+        await asyncio.sleep(5)
+        await client.change_presence(game=discord.Game(name='vai chetan'))
+        await asyncio.sleep(5)
     
-
-
-
 @client.event
 async def on_ready():
+    print('bot online')
     client.loop.create_task(status_task())
     
         
