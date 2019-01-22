@@ -25,16 +25,7 @@ class MyClient(discord.Client):
         self.msgBox = messageBox.MessageBox()
 
          
-async def status_task(self):
-    while True:
-        await client.change_presence(game=discord.Game(name='HQ TRIVIA'))
-        await asyncio.sleep(5)
-        await client.change_presence(game=discord.Game(name='vai chetan'))
-        await asyncio.sleep(5)
-    
-async def on_ready(self):
-    print('bot online')
-    client.loop.create_task(status_task())
+
     
         
     async def on_message(self, message: discord.Message):
